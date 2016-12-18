@@ -20,6 +20,9 @@
 #tab-list ul li.expanded {
   list-style-image: url('images/downarrow.png');
 }
+#tab-list ul li.single-item {
+  list-style-image: url('images/blank.png');
+}
 #tab-list ul li.tab-group:hover {
   background-color: #2284e6;
   color: white;

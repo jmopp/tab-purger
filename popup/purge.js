@@ -35,6 +35,7 @@ function getTabs() {
       li.appendChild(buttonTray);
 
       if(tab.count == 1) {
+        li.setAttribute("class", "tab-group single-item");
         if(tab.tabs[0].title) {
           span.textContent = tab.tabs[0].title;
         } else {
@@ -108,7 +109,7 @@ function getTabs() {
       li.addEventListener("click", function(evt) {
         if(li.className=="tab-group") {
           li.setAttribute("class", "tab-group expanded");
-        } else {
+        } else if(li.className="tab-group expanded") {
           li.setAttribute("class", "tab-group");
         }
         if(subUl) {
