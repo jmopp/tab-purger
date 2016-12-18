@@ -1,0 +1,66 @@
+#tab-list ul {
+  margin: 0px;
+  list-style-image: url('images/leftarrow.png');
+  list-style-position: inside;
+  padding: 0px;
+}
+#tab-list ul li {
+  margin: 0px;
+  padding: 0px;
+}
+#tab-list ul li.tab-group:hover span.close-button {
+  visibility:visible;
+}
+#tab-list ul li.tab-group span.close-button {
+  visibility:hidden;
+  position:absolute;
+  right: 6px;
+  margin: 2px;
+}
+#tab-list ul li.expanded {
+  list-style-image: url('images/downarrow.png');
+}
+#tab-list ul li.tab-group:hover {
+  background-color: #2284e6;
+  color: white;
+}
+#tab-list ul li.tab-group:hover ul {
+  background-color: #d4d4d4;
+}
+#tab-list ul li.tab-group ul:hover {
+  background-color: #d4d4d4;
+}
+#tab-list ul li.tab-group ul {
+  list-style: none;
+  margin:0px;
+  background-color: white;
+  color: black;
+}
+#tab-list ul li.tab-group ul li {
+  padding-left:1em;
+}
+#tab-list ul li.tab-group ul li:hover span.sub-close-button {
+  visibility:visible;
+}
+#tab-list ul li.tab-group ul li span.sub-close-button {
+  visibility:hidden;
+  position:absolute;
+  right: 1em;
+  margin: 2px;
+}
+#tab-list ul li.tab-group ul li:hover {
+  background-color: #2284e6;
+  color:white;
+}
+#tab-list ul li.tab-group ul.sub-list-hidden {
+  display:none;
+}
+body {
+  margin: 0px;
+  padding: 5px;
+  font-family: sans-serif;
+  background-color:white;
+}
+h3 {
+  margin: 5px;
+}

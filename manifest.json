@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Tab Purger",
+  "version": "1.0",
+  "description": "Allows the user to purge tabs by domain",
+  "icons": {
+    "48": "icons/tab-purger-48.png",
+    "96": "icons/tab-purger-96.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/tab-purger-rect-16.png",
+      "19": "icons/tab-purger-rect-19.png",
+      "32": "icons/tab-purger-rect-32.png",
+      "38": "icons/tab-purger-rect-38.png",
+      "64": "icons/tab-purger-rect-64.png"
+    },
+    "default_title": "Tab Purger",
+    "default_popup": "popup/purge.html"
+  }
+}
