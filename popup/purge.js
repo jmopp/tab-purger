@@ -86,6 +86,13 @@ function getTabs() {
             e.stopPropagation();
             }
           });
+          // This is because we can't have parent selectors
+          subUl.addEventListener("mouseover", function(e) {
+            li.setAttribute("style", "background-color:white;color:black");
+          });
+          subUl.addEventListener("mouseout", function(e) {
+            li.removeAttribute("style");
+          });
           subLi.appendChild(subTray);
           subUl.appendChild(subLi);
         });
@@ -93,7 +100,7 @@ function getTabs() {
       }
 
       li.addEventListener("mouseup", function(e) {
-        if(e.button == 1) { //middle click
+        if(e.button == 1) {
           if(subUl) {
             closeTabs(tab.host).then(function() {
               li.setAttribute("style", "display:none");

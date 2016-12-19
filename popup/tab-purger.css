@@ -7,6 +7,7 @@
 #tab-list ul li {
   margin: 0px;
   padding: 0px;
+  padding-right:12px;
 }
 #tab-list ul li.tab-group:hover span.close-button {
   visibility:visible;
@@ -19,6 +20,10 @@
 }
 #tab-list ul li.expanded {
   list-style-image: url('images/downarrow.png');
+  font-weight:bold;
+}
+#tab-list ul li.expanded ul {
+  font-weight:normal;
 }
 #tab-list ul li.single-item {
   list-style-image: url('images/blank.png');
@@ -27,17 +32,9 @@
   background-color: #2284e6;
   color: white;
 }
-#tab-list ul li.tab-group:hover ul {
-  background-color: #d4d4d4;
-}
-#tab-list ul li.tab-group ul:hover {
-  background-color: #d4d4d4;
-}
 #tab-list ul li.tab-group ul {
   list-style: none;
   margin:0px;
-  background-color: white;
-  color: black;
 }
 #tab-list ul li.tab-group ul li {
   padding-left:1em;
