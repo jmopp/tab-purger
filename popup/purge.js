@@ -116,7 +116,7 @@ function getTabs() {
       li.addEventListener("click", function(evt) {
         if(li.className=="tab-group") {
           li.setAttribute("class", "tab-group expanded");
-        } else if(li.className="tab-group expanded") {
+        } else if(li.className=="tab-group expanded") {
           li.setAttribute("class", "tab-group");
         }
         if(subUl) {

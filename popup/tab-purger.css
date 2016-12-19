@@ -60,6 +60,8 @@ body {
   padding: 5px;
   font-family: sans-serif;
   background-color:white;
+  width: auto;
+  height: auto;
 }
 h3 {
   font-size: medium;
